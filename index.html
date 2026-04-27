@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Passenger Data Visualization</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f0f2f5; color: #1a1a1b; margin: 0; padding: 40px; }
+        .container { max-width: 950px; margin: auto; background: #ffffff; padding: 35px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #003366; border-bottom: 3px solid #003366; padding-bottom: 10px; }
+        .viz-card { margin-top: 30px; padding: 20px; border: 1px solid #e1e4e8; border-radius: 10px; background-color: #fafbfc; }
+        img { width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        h3 { color: #0056b3; margin-top: 20px; }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #666; }
+        a { color: #0056b3; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nokutenda's Airline Passenger Analysis</h1>
+
+        <div class="viz-card">
+            <h3>Graphic 1: International Passenger Growth (1949-1960)</h3>
+            <img src="num_passengers_graph.png" alt="Passenger Growth Line Graph">
+            <p><strong>What this represents:</strong> This line chart tracks the monthly number of international airline passengers over an 11-year period.</p>
+            <p><strong>Why it's important:</strong> It visualizes the steady, exponential growth of the aviation industry. It shows that despite small fluctuations, the overall trend of global travel was rising rapidly during the mid-20th century.</p>
+        </div>
+
+        <div class="viz-card">
+            <h3>Graphic 2: Monthly Distribution & Seasonality</h3>
+            <img src="b0x_whisker_monthlypassngerdistribution.png" alt="Monthly Seasonality Boxplot">
+            <p><strong>What this represents:</strong> This box-and-whisker plot groups the passengers by month to show the distribution and variance for each month across the entire dataset.</p>
+            <p><strong>Why it's interesting:</strong> It highlights a predictable "summer peak" in July and August. This seasonality is crucial for airlines to understand when to increase staff and flight frequency to meet higher demand.</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Data Source:</strong> <a href="https://raw.githubusercontent.com/jbrownlee/Datasets/master/airline-passengers.csv" target="_blank">Download Airline Passengers Dataset (CSV)</a></p>
+        </div>
+    </div>
+</body>
+</html>
